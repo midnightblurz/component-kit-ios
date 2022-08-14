@@ -61,6 +61,7 @@ open class PrimaryButton: UIButton {
         case red
         case gray
         case transparent
+        case primary
     }
 
 }
