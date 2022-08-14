@@ -47,6 +47,12 @@ open class PrimaryButton: UIButton {
             setBackgroundColor(.clear, for: .normal)
             setBackgroundColor(.clear, for: .highlighted)
             setBackgroundColor(.clear, for: .disabled)
+        case .primary:
+            setTitleColor(.themeWhite, for: .normal)
+            setTitleColor(.themeGray, for: .highlighted)
+            setBackgroundColor(.themePrimary, for: .normal)
+            setBackgroundColor(.themePrimary, for: .highlighted)
+            setBackgroundColor(.themeSteel20, for: .disabled)
         }
     }
 

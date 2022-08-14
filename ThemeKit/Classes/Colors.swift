@@ -1,6 +1,8 @@
 import UIExtensions
 
 extension UIColor {
+    public static let themePrimaryD = UIColor(hex: 0x3212B0)
+    public static let themePrimaryL = UIColor(hex: 0x3212B0)
     public static let themeYellowD = UIColor(hex: 0xffa800)
     public static let themeYellowL = UIColor(hex: 0xff8a00)
     public static let themeGreenD = UIColor(hex: 0x05c46b)
@@ -38,9 +40,11 @@ extension UIColor {
     public static let themeSteelLight10 = UIColor(hex: 0xd6d7dd)
     public static let themeLagunaD = UIColor(hex: 0x4a98e9)
     public static let themeLagunaL = UIColor(hex: 0x4692da)
+    public static let themeWhite = UIColor(hex: 0xFFFFFF)
 }
 
 extension UIColor {
+    public static var themePrimary: UIColor { color(dark: .themePrimaryD, light: .themePrimaryL) }
     public static var themeJacob: UIColor { color(dark: .themeYellowD, light: .themeYellowL) }
     public static var themeRemus: UIColor { color(dark: .themeGreenD, light: .themeGreenL) }
     public static var themeLucian: UIColor { color(dark: .themeRedD, light: .themeRedL) }
