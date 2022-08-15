@@ -55,10 +55,10 @@ public class Theme {
         ThemeManager.shared.currentTheme
     }
 
-    public static func updateNavigationBarTheme() {
+    public static func updateNavigationBarTheme(color: UIColor = .themeNavigationBarBackground) {
         let standardAppearance = UINavigationBarAppearance()
         standardAppearance.configureWithTransparentBackground()
-        standardAppearance.backgroundColor = .themeNavigationBarBackground
+        standardAppearance.backgroundColor = color
         standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.themeLeah]
         standardAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.themeLeah]
 
